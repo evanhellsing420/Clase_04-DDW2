@@ -1,0 +1,189 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=JetBrains+Mono:wght@400;500&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.menu {
+  background: #2b2a26;
+  color: #f4f1ea;
+  padding: 0 24px;
+  height: 52px;
+  line-height: 52px;
+  z-index: 100;
+}
+.menu__logo {
+  display: inline-block;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  color: #f4f1ea;
+}
+.menu__links {
+  list-style: none;
+  float: right;
+}
+.menu__links li {
+  display: inline-block;
+}
+.menu__links a {
+  display: inline-block;
+  font-family: "DM Sans", sans-serif;
+  font-size: 0.9rem;
+  color: #f4f1ea;
+  text-decoration: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  transition: background 0.15s;
+}
+.menu__links a:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+body {
+  font-family: "DM Sans", sans-serif;
+  background: #f4f1ea;
+  color: #2b2a26;
+  line-height: 1.6;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 1.9rem;
+  letter-spacing: -0.5px;
+  margin-bottom: 4px;
+}
+
+.subtitulo {
+  color: #8a857a;
+  margin-bottom: 32px;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  border-bottom: 1px solid #ddd7ca;
+}
+
+a {
+  display: block;
+  padding: 14px 8px;
+  text-decoration: none;
+  color: #2b2a26;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.95rem;
+}
+
+.leyenda {
+  background: #2b2a26;
+  color: #f4f1ea;
+  padding: 14px 24px;
+  font-size: 0.8rem;
+  text-align: center;
+}
+.leyenda span {
+  display: inline-block;
+  margin: 0 8px;
+}
+.leyenda b {
+  color: #c0492f;
+}
+
+li a {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+li a::before {
+  content: "";
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  flex-shrink: 0;
+}
+li a[href$=".pdf"]::before {
+  background-image: url("/public/assets/iconos/pdf.png");
+}
+li a[href$=".xlsx"]::before {
+  background-image: url("/public/assets/iconos/excel.png");
+}
+li a[href$=".xls"]::before {
+  background-image: url("/public/assets/iconos/excel.png");
+}
+li a[href$=".png"]::before {
+  background-image: url("/public/assets/iconos/imagen.png");
+}
+li a[href$=".jpg"]::before {
+  background-image: url("/public/assets/iconos/imagen.png");
+}
+li a[href$=".jpeg"]::before {
+  background-image: url("/public/assets/iconos/imagen.png");
+}
+li a[href$=".docx"]::before {
+  background-image: url("/public/assets/iconos/word.png");
+}
+li a[href$=".doc"]::before {
+  background-image: url("/public/assets/iconos/word.png");
+}
+li a[href$=".zip"]::before {
+  background-image: url("/public/assets/iconos/zip.png");
+}
+li a[href$=".mp3"]::before {
+  background-image: url("/public/assets/iconos/audio.png");
+}
+li a[href$=".mp4"]::before {
+  background-image: url("/public/assets/iconos/video.png");
+}
+
+li a::after {
+  content: "";
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  flex-shrink: 0;
+  margin-left: auto;
+}
+li a[href$=".pdf"]::after {
+  background-image: url("/public/assets/iconos/pdf.png");
+}
+li a[href$=".xlsx"]::after {
+  background-image: url("/public/assets/iconos/excel.png");
+}
+li a[href$=".xls"]::after {
+  background-image: url("/public/assets/iconos/excel.png");
+}
+li a[href$=".png"]::after {
+  background-image: url("/public/assets/iconos/imagen.png");
+}
+li a[href$=".jpg"]::after {
+  background-image: url("/public/assets/iconos/imagen.png");
+}
+li a[href$=".jpeg"]::after {
+  background-image: url("/public/assets/iconos/imagen.png");
+}
+li a[href$=".docx"]::after {
+  background-image: url("/public/assets/iconos/word.png");
+}
+li a[href$=".doc"]::after {
+  background-image: url("/public/assets/iconos/word.png");
+}
+li a[href$=".zip"]::after {
+  background-image: url("/public/assets/iconos/zip.png");
+}
+li a[href$=".mp3"]::after {
+  background-image: url("/public/assets/iconos/audio.png");
+}
+li a[href$=".mp4"]::after {
+  background-image: url("/public/assets/iconos/video.png");
+}
+
+/*# sourceMappingURL=styles.css.map */
